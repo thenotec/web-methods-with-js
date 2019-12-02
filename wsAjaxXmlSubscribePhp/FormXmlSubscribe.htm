@@ -115,8 +115,8 @@
 	                    CsvFieldValue: $("#txtCsvFieldValue").val(),
 	                    Prefix: $("#txtPrefix").val(),
 	                    Number: $("#txtNumber").val(),
-	                    ReturnCode: $("#chkRetCode").is(':checked') ? true : false,
-	                    RequireConfirmation: $("#rbRichiestaConferma").is(':checked') ? true : false
+			    ReturnCode: $("#chkRetCode").is(':checked') ? 1 : 0,
+			    RequireConfirmation: $("#rbRichiestaConferma").is(':checked') ? true : false
 	                },
 	                success: function (msg) {
 	                    
