@@ -59,8 +59,7 @@ class ajax
         try
         {
             //prepare query string
-            $console_url = $this->consoleUrl.'?email='.urldecode($Email).'&name='.$Nome.'&list='.$IDList.'&group='.$IDGroup.'&lang='.$Language.'&confirm='.$RequiredConfirmation.'&csvFldNames='.$csvFldNames.'&csvFldValues='.$csvFldValues.'&retCode='.$ReturnCode.'&sms='.$Number;
-            //init callback
+            $console_url = $this->consoleUrl.'?email='.urldecode($Email).'&list='.$IDList.'&group='.$IDGroup.'&lang='.$Language.'&confirm='.$RequiredConfirmation.'&csvFldNames='.$csvFldNames.'&csvFldValues='.$csvFldValues.'&retCode='.$ReturnCode.'&sms='.$Number;            //init callback
             $server_request = curl_init($console_url);
             // set return value option
             curl_setopt($server_request, CURLOPT_RETURNTRANSFER, 1);
